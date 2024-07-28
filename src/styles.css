@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:blanchedalmond;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+
+}
+header{
+  width:100%;
+  height: 100px;
+  background:rgb(244, 215, 142) ;
+  
+}
+.logo{
+  float: left;
+  text-align: left;
+  line-height: 100px;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  font-family: 'Pacifico';
+  letter-spacing: 1px;
+}
+
+nav{
+  float:right;
+  line-height: 100px;
+  text-align: right;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-family: 'Poppins';
+  padding: 20px;
+  margin: 0 1px;
+
+}
+
+nav a:hover{
+  background: white;
+  color: black;
+  
+}
+
+

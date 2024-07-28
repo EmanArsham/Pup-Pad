@@ -1,0 +1,64 @@
+
+<!-- <div class="canvas-container">
+  <canvas #canvas
+          (mousedown)="onMouseDown($event)"
+          (mousemove)="onMouseMove($event)"
+          (mouseup)="onMouseUp()"
+          (mouseout)="onMouseUp()"
+        ></canvas>
+</div> -->
+<!-- <button (click)="clearCanvas()">Clear</button> -->
+
+<!-- <div class="canvas-container">
+
+ <canvas #myCanvas
+  [width]="400"
+  [height]="400"
+  style="border:1px solid #000;">
+  
+</canvas>
+</div> -->
+<!-- <button (click)="clearCanvas()">Clear</button> -->
+
+
+
+<!-- <section class="container">
+  <div id="toolbar">
+      <label for="stroke">Stroke</label>
+      <input id="stroke" name='stroke' type="color">
+      <label for="lineWidth">Line Width</label>
+      <input id="lineWidth" name='lineWidth' type="number" value="5">
+      <button id="clear">Clear</button>
+  </div>
+  <div class="drawing-board">
+      <canvas id="drawing-board"></canvas>
+  </div>
+</section> -->
+
+
+
+<!-- <div class="drawingContainer" 
+     (mousedown)="onBeginStroke($event)" 
+     (mouseup)="onEndStroke($event)" 
+     (mousemove)="onDraw($event)" 
+     (mouseleave)="onEndStroke($event)">
+  <canvas #canvas>
+  </canvas>
+ 
+</div>
+<button (click)="clearCanvas()">Clear</button> -->
+
+
+<div id="toolbar">
+  <label for="color">Color:</label>
+  <input id="stroke" name="stroke" type="color" (change)="onColorChange($event)">
+</div>
+<div class="drawingContainer" 
+     (mousedown)="onBeginStroke($event)" 
+     (mouseup)="onEndStroke($event)" 
+     (mousemove)="onDraw($event)" 
+     (mouseleave)="onEndStroke($event)">
+  <canvas #canvas></canvas>
+</div>
+
+  <button (click)="clearCanvas()">Clear</button>

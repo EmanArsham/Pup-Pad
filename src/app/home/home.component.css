@@ -1,0 +1,111 @@
+
+.search-form {
+    text-align: center; 
+    margin-top: 30px;
+}
+  
+.search-form input[type="text"] {
+    width: 500px; 
+    padding: 10px;
+}
+  
+.search-form button {
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+/* Styles for the gallery container */
+.gallery {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+
+}
+
+/* Styles for individual gallery items */
+.gallery img {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin: 10px; /* Add space around each image */
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(109, 106, 106, 0.94); /* Add a subtle shadow */
+}
+
+.gallery img:nth-child(3n) {
+    margin-right: 0; /* Remove right margin for the last image in each row */
+}
+
+.favorite-btn { 
+    transform: translate(-45px, 150px);
+    border: none;
+    background-color: transparent;
+    color: #666; /* Grey color for heart */
+    cursor: pointer;
+
+}
+
+.favorite-btn .fas {
+font-size: 24px;
+}
+
+.favorite-btn .favorited {
+color: #f00; /* Red color for favorited heart */
+}
+
+.load-more-section {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 10px; 
+    margin-bottom: 30px;
+}
+
+.load-more-btn {
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: goldenrod;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.load-more-btn:hover {
+background-color: rgb(244, 215, 142);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

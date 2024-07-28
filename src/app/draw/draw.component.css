@@ -1,0 +1,48 @@
+
+.drawingContainer {
+  border: 1px solid #000;
+  display: block;
+  width: 1000px; /* Set your desired width */
+  height: 800px; /* Set your desired height */
+  margin: 100px auto;
+  background-color: white; 
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+
+  padding: 15px 30px; 
+  font-size: 18px; 
+  background-color: goldenrod;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background-color: rgb(244, 215, 142);
+}
+
+#toolbar {
+  position: absolute; /* Position the toolbar relative to the parent container */
+  top: 18%; /* Align the toolbar vertically in the middle */
+  left: 440px; /* Adjust the left offset as needed */
+  transform: translateY(-50%); /* Center the toolbar vertically */
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: row; /* Stack the toolbar items vertically */
+}
+
+#toolbar label {
+  font-size: 20px;
+  margin-right: 10px; 
+  color: black;
+  font-family: 'Pacifico';
+  letter-spacing: 1px;
+}

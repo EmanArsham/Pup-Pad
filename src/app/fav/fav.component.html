@@ -1,0 +1,19 @@
+<!-- <section class = gallery>
+  <ul>
+    @for (pet of favoriteDogs; track favoriteDogs){
+      <img [src] = "pet.url" alt="dog photo" >   
+    }
+  </ul>
+</section>  -->
+
+<section class="gallery">
+  <ul>
+    <li> @for( pet of favoriteDogs; track favoriteDogs){
+      <img [src]="pet.url" alt="dog photo">
+      <button class="favorite-btn" (click)="toggleFavorite(pet)">
+        <i class="fas fa-heart" [class.favorited]="pet.isFavorite"></i>
+      </button>
+    }
+    </li>
+  </ul>
+</section>

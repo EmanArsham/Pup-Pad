@@ -1,0 +1,33 @@
+<main>
+    
+  <form class = "search-form">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </form>
+
+    <section class = gallery>
+        <ul>
+          
+          @for (pet of pets; track pets){
+            <img [src] = "pet.url" alt="dog photo" (click)="openModal(pet.url)" >
+            <button class="favorite-btn" (click)="toggleFavorite(pet)">
+              <i class="fas fa-heart" [class.favorited]="pet.isFavorite"></i>
+            </button>
+          
+          }
+        </ul>
+      </section> 
+    
+      <section class ="load-more-section">
+      <button 
+        class="load-more-btn" (click)="loadMore()" @if(pets.length)>  Load More
+      </button>
+      </section>
+  </main>
+  
+  <div id="myModal" class="modal">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+
